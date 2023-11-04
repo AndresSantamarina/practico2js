@@ -8,3 +8,18 @@
 22
 1
 */
+
+const numeroPiramide = parseInt(prompt("Ingrese un número para la pirámide"));
+if (numeroPiramide > 50) {
+    alert("Seleccione un número menor")
+} else {
+    for (let filas = numeroPiramide; filas >= 1; filas--) {
+        for (let i = 0; i < filas; i++) {
+            document.write(filas);
+        }
+        document.write('<br>')
+    }
+}
+
+
+

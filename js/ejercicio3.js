@@ -3,3 +3,15 @@
 
 Nota: usar confirm() https://www.w3schools.com/jsref/met_win_confirm.asp
 */
+
+do {
+    const frase = prompt("Ingrese una frase");
+    if (frase === "" || frase === null) {
+        alert("Ingreso inválido")
+    }
+    else {
+        document.write(`${frase}-`);
+    }
+}
+while (confirm("¿Desea ingresar otra frase?"))
+
